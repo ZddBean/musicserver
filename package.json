@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "serve":"node ./index.js",
     "start": "node ./bin/www",
-    "build": "node index.js"
+    "builds": "node ./index.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
