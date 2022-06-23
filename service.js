@@ -8,17 +8,21 @@ module.exports ={
         })
     },
     getMusicList:(req,res)=>{
-        fs.readdir(__dirname + '/public',(error,list)=>{
-            if(error){
-                res.send(error)
-                throw error
-            }else{
-                res.json({
-                    result:true,
-                    data:list
-                })
-            }
+        res.json({
+            result:true,
+            data:list
         })
+        // fs.readdir(__dirname + '/public',(error,list)=>{
+        //     if(error){
+        //         res.send(error)
+        //         throw error
+        //     }else{
+        //         res.json({
+        //             result:true,
+        //             data:list
+        //         })
+        //     }
+        // })
         
     }
 }
