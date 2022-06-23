@@ -5,7 +5,7 @@
  const router = express.Router()
  const service = require("./service")
 
- router.get('/',service.getIndex)
+ router.get('/',service.getMusicList)
  router.get('/getmusiclist',service.getMusicList)
 
  module.exports = router;
