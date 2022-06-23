@@ -8,7 +8,7 @@ module.exports ={
         })
     },
     getMusicList:(req,res)=>{
-        fs.readdir('./public',(error,list)=>{
+        fs.readdir('public',(error,list)=>{
             if(error){
                 res.send(error)
                 throw error
