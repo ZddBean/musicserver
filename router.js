@@ -6,6 +6,6 @@
  const service = require("./service")
 
  router.get('/',service.getMusicList)
- router.get('/getmusiclist',service.getMusicList)
+//  router.get('/getmusiclist',service.getMusicList)
 
  module.exports = router;
