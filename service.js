@@ -10,7 +10,7 @@ module.exports ={
     getMusicList:(req,res)=>{
         res.json({
             result:true,
-            data:list
+            data:[]
         })
         // fs.readdir(__dirname + '/public',(error,list)=>{
         //     if(error){
